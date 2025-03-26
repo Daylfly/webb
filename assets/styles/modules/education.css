@@ -1,0 +1,31 @@
+.education {
+    padding: 50px 0;
+}
+
+.education {
+    background-color: black;
+    color: #fca4fc;
+}
+
+.education__title {
+    margin: 50px;
+}
+
+.education_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.education__timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.education__step {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.education__year {
+    font-size: 24px;
+    font-weight: bold;
+}

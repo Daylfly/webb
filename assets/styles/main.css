@@ -1,0 +1,19 @@
+@import "./base/vars.css";
+@import "./base/utils.css";
+@import "./base/base.css";
+
+/* modules */
+@import "modules/about.css";
+@import "modules/skills.css";
+
+@import "./modules/header.css";
+@import "./modules/navigation.css";
+@import "./modules/intro.css";
+@import "modules/skills.css";
+@import "modules/education.css";
+@import "modules/portfolio.css";
+@import "modules/plans.css";
+
+@import "./modules/review.css";
+
+@import "./modules/footer.css";

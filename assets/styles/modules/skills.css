@@ -1,0 +1,37 @@
+.skills {
+    padding: 50px 0;
+    background-color: black;
+    color: var(--primary);
+}
+.skills__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.skills__title {
+    color: white;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.skills__list {
+    list-style: none;
+    padding: 0;
+}
+.skills__item {
+    font-size: 16px;
+    padding: 5px 0;
+}
+.skills__list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.skills__item {
+    background-color: #fca4fc;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+}

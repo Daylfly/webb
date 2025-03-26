@@ -1,0 +1,51 @@
+.about {
+    padding: 200px 0;
+    background-color: #f9f9f9;
+    color: black;
+}
+.about__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.about__title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: black;
+}
+.about__details {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.about__left {
+    flex: 1;
+    text-align: center;
+}
+.about__photo {
+    margin: 5px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.about__name {
+    font-size: 20px;
+    margin-top: 50px;
+}
+.about__right {
+    flex: 2;
+}
+.about__description {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.about__list {
+    list-style: none;
+    padding: 0;
+}
+.about__item {
+    font-size: 16px;
+    padding: 5px 0;
+}
