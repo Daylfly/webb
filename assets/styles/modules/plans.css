@@ -1,15 +1,43 @@
 .plans {
-    padding: 50px 50px;
-    background-color: var(--foreground);
+    padding: var(--padding-large);
+    background-color: var(--background);
+    color: var(--text-color);
+}
+
+.plans__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--padding-medium);
+}
+
+.plans__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plans__info {
+    width: 100%;
+    text-align: left;
 }
 
 .plans__title {
-    text-align: center;
-    font-size: 32px;
-    margin-bottom: 20px;
-    color: var(--background);
+    font-size: var(--font-size-large);
+    margin-bottom: var(--gap-medium);
+    color: var(--primary-color);
+}
+
+.plans__details {
+    width: 100%;
+}
+
+.plans__right {
+    width: 100%;
 }
 
 .plans__description {
-    color: var(--background);
+    font-size: var(--font-size-small);
+    margin-bottom: var(--gap-large);
+    color: var(--text-color);
+    text-align: left;
 }

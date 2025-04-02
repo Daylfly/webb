@@ -1,118 +1,92 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 .accordion--section {
-    padding: 25px;
+    padding: var(--padding-large);
     display: flex;
     text-align: center;
     justify-content: center;
+    background-color: var(--background);
 }
+.accordion-text {
+    color var(--primary-color) !important;
+}
+
 .accordion {
     align-items: center;
     display: grid;
     padding: 25px;
     max-width: 33rem;
     width: 100%;
-    background-color: var(--background)!important;
+    background-color: var(--accordion-bg-color);
     margin: 0 1rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    border-radius: var(--rounded-base);
+    box-shadow: var(--box-shadow);
     justify-content: center;
-    font-family: 'Poopins', sans-serif;
-}
-.accordion__content:nth-child(1) {
-    background-color: #FAE8EC !important;
-    border-left: 6px solid #D37F93 !important;
+    font-family: var(--ff-primary);
 }
 
-.accordion__content:nth-child(2) {
-    background-color: #FAE8EC !important;
-    border-left: 6px solid #D37F93 !important;
-}
-
-.accordion__content:nth-child(3) {
-    background-color: #FAE8EC !important;
-    border-left: 6px solid #D37F93 !important;
-}
-.accordion__content:nth-child(4) {
-    background-color: #FAE8EC !important;
-    border-left: 6px solid #D37F93 !important;
-}
-
-.accordion-content  {
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    border-radius: 5px;
-    row-gap: 20px;
-    padding: 30px 50px 30px 20px;
-    width: 500px;
-}
-
-.accordion .accordion__content {
+.accordion__content {
+    background-color: var(--accordion-content-bg-color);
+    border-left: 6px solid var(--accordion-border-color);
     margin: 15px 10px;
-    padding: 10px 15px; /* добавляет отступ сверху и снизу */
-    border-radius: 5px;
-    background-color: var(--background);
+    padding: 10px 15px;
+    border-radius: var(--rounded-base);
     overflow: hidden;
-    display: grid;
+    display: flex;
     flex-direction: column;
     min-height: 50px;
     cursor: pointer;
-
+    transition: transform var(--transition-duration), box-shadow var(--transition-duration);
 }
 
-.accordion-content.is-open {
-    padding-bottom: 70px;
+.accordion__content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .accordion__content header {
-    font-family: 'Poopins', sans-serif;
-    display: flex;
+    display: grid;
     min-height: 50px;
     padding: 0 15px;
     cursor: pointer;
     align-items: center;
-    justify-content: normal;
-    transition: all 0.3s linear;
+    justify-content: space-between;
+    transition: all var(--transition-duration) linear;
     gap: 10px;
 }
+
 .accordion__content.is-open header {
     min-height: 60px;
     margin-bottom: 25px;
-
 }
+
 .accordion__content-title {
-    font-size: 1rem;
+    font-size: var(--font-size-medium);
     font-weight: 600;
     color: var(--black);
-    gap: 5px;
-    align-items: center;
-
+    text-align: left;
 }
+
 .accordion__content-description {
-    gap: 300px;
     display: grid;
     height: 0;
-    font-size: 14px;
-    color: #000000;
+    font-size: var(--font-size-tiny);
+    color: var(--text-color);
     font-weight: 400;
     align-items: center;
     justify-content: center;
     max-height: 0;
     overflow: hidden;
     padding: 0 15px;
-    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+    transition: max-height var(--transition-duration) ease-in-out, padding var(--transition-duration) ease-in-out;
+    text-align: left;
 }
 
 .accordion__content.is-open .accordion__content-description {
-    overflow: hidden;
     max-height: 200px;
-    padding: 0px 40px;
+    padding: 0 40px;
 }
-

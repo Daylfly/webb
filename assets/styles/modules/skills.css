@@ -1,37 +1,40 @@
 .skills {
-    padding: 50px 0;
-    background-color: var(--foreground);
-    color: var(--primary);
+    padding: var(--padding-large);
+    background-color: var(--background);
+    color: var(--text-color);
 }
+
 .skills__container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: var(--padding-medium);
 }
+
 .skills__title {
-    color: var(--background);
+    color: var(--primary-color);
     text-align: center;
-    font-size: 32px;
-    margin-bottom: 20px;
+    font-size: var(--font-size-large);
+    margin-bottom: var(--gap-medium);
 }
 
 .skills__list {
     list-style: none;
     padding: 0;
-}
-.skills__item {
-    font-size: 16px;
-    padding: 5px 0;
-}
-.skills__list {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: var(--gap-medium);
     flex-wrap: wrap;
 }
+
 .skills__item {
-    background-color: #fca4fc;
-    color: black;
+    background-color: var(--skill-bg-color);
+    color: var(--skill-text-color);
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: var(--rounded-base);
+    transition: transform var(--transition-duration), box-shadow var(--transition-duration);
+}
+
+.skills__item:hover {
+    transform: scale(1.05);
+    box-shadow: var(--box-shadow);
 }

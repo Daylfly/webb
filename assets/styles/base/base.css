@@ -23,7 +23,8 @@ body {
     font-family: var(--ff-primary);
     display: flex;
     flex-direction: column;
-    background-color: var(--background);
+    background-color: var(--background) !important;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
 }
-
-

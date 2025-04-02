@@ -1,42 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap');
 
 :root {
-    --ff-primary: "Inter", serif;
-    --ff-secondary: "Manrope", serif;
-
-    --intro: #fca4fc;
-    --background: #fff;
-    --foreground: #575757;
-    /* primary */
-    --primary: #fca4fc;
-    --primary-foreground: #0F173D;
-    /* secondary */
-    --secondary: #222;
-    --secondary-foreground: #000000;
-    /* muted */
-    --muted: #343434;
-    --muted-foreground: var(--gray);
-    /* ghost */
-    --ghost: rgba(31, 31, 31, .04);
-    --ghost-foreground: var(--secondary);
-    /* accent */
-    --accent: var(--primary);
-    --accent-foreground: var(--primary);
+    --background: #f9f9f9;
+    --foreground: #ffffff;
+    --primary-color: purple;
+    --secondary-color: #3acfd5;
+    --text-color: #1b1d21;
     --black: #000000;
-    --gray: #676C86;
-    --gradient: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
-
-    /* rounded */
+    --white: #ffffff;
+    --ff-primary: 'Poppins', sans-serif;
     --rounded-base: 8px;
-    --rounded-full: 50%;
-
-    /* stoke */
-    --separator: #E0E0E0;
-    --border: #E0E0E0;
-
-    /* container */
-    --content: 1440px;
-    --container-offset: 20px;
-    --container-width: calc(var(--content) + (var(--container-offset) * 2));
-
+    --font-size-large: 32px;
+    --font-size-medium: 20px;
+    --font-size-small: 18px;
+    --font-size-tiny: 16px;
+    --gap-large: 40px;
+    --gap-medium: 20px;
+    --gap-small: 15px;
+    --padding-large: 50px 50px;
+    --padding-medium: 0 20px;
+    --border-radius-large: 50%;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --transition-duration: 0.3s;
+    --skill-bg-color: #fca4fc;
+    --skill-text-color: #000000;
+    --accordion-bg-color: #222222;
+    --accordion-content-bg-color: #FAE8EC;
+    --accordion-border-color: #D37F93;
+    --contact-bg-color: #f0f0f0;
+    --contact-text-color: #1b1d21;
 }

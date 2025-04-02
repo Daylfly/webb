@@ -1,17 +1,59 @@
 .contacts {
-    text-align: center;
     padding: 50px 0;
-    background-color: var(--foreground);
-    color: var(--background);
+    background-color: var(--background);
+    color: var(--contact-text-color);
+}
+
+.contacts__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contacts__title {
+    font-size: var(--font-size-large);
+    margin-bottom: var(--gap-medium);
+    color: var(--primary-color);
 }
 
 .contacts__list {
     list-style: none;
     padding: 0;
-    text-align: center;
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--gap-medium);
 }
+
 .contacts__item {
-    font-size: 18px;
-    margin: 15px 0;
+    background-color: var(--contact-bg-color);
+    border-radius: var(--rounded-base);
+    box-shadow: var(--box-shadow);
+    padding: 20px;
+    width: 300px;
+    text-align: left; /* Текст начинается с левой стороны */
+    transition: transform var(--transition-duration), box-shadow var(--transition-duration);
+}
+
+.contacts__item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contacts__item-icon {
+    font-size: 24px;
+    color: var(--primary-color);
+    margin-bottom: var(--gap-small);
+}
+
+.contacts__item-label {
+    font-size: var(--font-size-medium);
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: var(--gap-small);
+}
+
+.contacts__item-value {
+    font-size: var(--font-size-small);
+    color: var(--contact-text-color);
 }
