@@ -1,56 +1,28 @@
+.body {
+    font-family: "Comic Sans MS" !important;
+}
+
 .header {
     position: absolute;
     padding: 20px 50px;
     width: 100%;
     color: #1B1D21;
     z-index: 60;
+    background-color: var(--background);
+    border-image: linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%) 1;
 }
+
+
 
 .header__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.circle1 {
-    --size:162px;
-    position: absolute;
-    top: 109px;
-    right: 362px;
-    width: var(--size);
-    height: var(--size);
-    border-radius: 50%;
-    background: white;
-}
-.circle2 {
-    --size:182px;
-    position: absolute;
-    top: 180px;
-    right: 150px;
-    width: var(--size);
-    height: var(--size);
-    border-radius: 50%;
-    background: white;
-}
-.circle3 {
-    --size:132px;
-    position: absolute;
-    top: 290px;
-    right: 446px;
-    width: var(--size);
-    height: var(--size);
-    border-radius: 50%;
-    background: white;
-}
-.circle4 {
-    --size:62px;
-    position: absolute;
-    top: 380px;
-    right: 324px;
-    width: var(--size);
-    height: var(--size);
-    border-radius: 50%;
-    background: #FFA262;
+    background-color: gainsboro;
+    border-color: #222;
+    border-radius: 5px;
+    width: 100%;
+    height: 100px;
 }
 .header__logo {
     display: flex;

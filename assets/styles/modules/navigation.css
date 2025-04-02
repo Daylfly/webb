@@ -1,7 +1,7 @@
 .navigation {
     display: flex;
     border-radius: var(--rounded-base);
-    color: #1B1D21;
+    color: var(--black);
     align-items: center;
     gap: 30px;
 }
@@ -17,6 +17,15 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 28px;
+    margin-right: 50px;
+}
+
+.navigation__menu-item{
+    transition: 200ms;
+}
+
+.navigation__menu-item:is(:active,:hover) {
+    color: var(--primary);
 }
 
 .navigation__menu-link {
@@ -37,7 +46,7 @@
         transform: translateX(-100%);
         transition: all 0.3s ease;
         z-index: 100;
-        color: white;
+        color: var(--background);
         align-items: unset;
     }
 

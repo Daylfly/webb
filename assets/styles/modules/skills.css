@@ -1,6 +1,6 @@
 .skills {
     padding: 50px 0;
-    background-color: black;
+    background-color: var(--foreground);
     color: var(--primary);
 }
 .skills__container {
@@ -9,7 +9,7 @@
     padding: 0 20px;
 }
 .skills__title {
-    color: white;
+    color: var(--background);
     text-align: center;
     font-size: 32px;
     margin-bottom: 20px;

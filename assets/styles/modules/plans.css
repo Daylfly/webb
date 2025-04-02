@@ -1,12 +1,15 @@
 .plans {
     padding: 50px 50px;
-    background-color: #f9f9f9;
-    color: black;
+    background-color: var(--foreground);
 }
 
 .plans__title {
     text-align: center;
     font-size: 32px;
     margin-bottom: 20px;
-    color: black;
+    color: var(--background);
+}
+
+.plans__description {
+    color: var(--background);
 }

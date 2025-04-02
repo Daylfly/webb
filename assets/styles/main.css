@@ -5,15 +5,12 @@
 /* modules */
 @import "modules/about.css";
 @import "modules/skills.css";
-
+@import "modules/contacts.css";
 @import "./modules/header.css";
+@import "./modules/timeline.css";
 @import "./modules/navigation.css";
-@import "./modules/intro.css";
-@import "modules/skills.css";
-@import "modules/education.css";
+@import "modules/accordion.css";
 @import "modules/portfolio.css";
 @import "modules/plans.css";
-
 @import "./modules/review.css";
-
 @import "./modules/footer.css";

@@ -1,9 +1,10 @@
 .about {
     padding: 200px 0;
-    background-color: #f9f9f9;
-    color: black;
+    background-color: var(--background);
+    color: var(--black);
 }
 .about__container {
+
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
@@ -12,7 +13,7 @@
     text-align: center;
     font-size: 32px;
     margin-bottom: 20px;
-    color: black;
+    color: var(--black);
 }
 .about__details {
     display: flex;

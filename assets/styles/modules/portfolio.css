@@ -1,13 +1,15 @@
 .portfolio {
     padding: 50px 0;
-    background-color: black;
-    color: #fca4fc;
+    background-color: var(--background);
+    color: var(--background);
 }
+
 .portfolio__container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
+
 .portfolio__title {
     text-align: center;
     font-size: 32px;
@@ -16,7 +18,7 @@
 
 .portfolio__description {
     font-size: 18px;
-    margin-bottom: 15px;
+    margin: 25px;
 }
 
 .portfolio__grid {
@@ -25,11 +27,13 @@
     gap: 20px;
     text-align: center;
 }
+
 .portfolio__item {
-    background-color: #222;
+    background-color: var(--secondary);
     padding: 15px;
     border-radius: 10px;
 }
+
 .portfolio__image {
     width: 100%;
     border-radius: 10px;
