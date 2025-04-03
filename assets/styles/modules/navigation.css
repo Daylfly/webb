@@ -20,17 +20,21 @@
     margin-right: 50px;
 }
 
-.navigation__menu-item{
+.navigation__menu-link{
     transition: 200ms;
 }
 
-.navigation__menu-item:is(:active,:hover) {
-    color: var(--primary);
+.navigation__menu-link:is(:hover) {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--primary-color);
+    transition: color var(--transition-duration);
 }
 
 .navigation__menu-link {
     text-decoration: none;
     font-weight: 600;
+
 }
 @media screen and (max-width: 768.98px) {
     .navigation {

@@ -26,7 +26,7 @@
 .footer__menu-link {
     text-decoration: none;
     font-weight: 600;
-    color: var(--footer-text-color);
+
     transition: color var(--transition-duration);
 }
 
@@ -48,7 +48,7 @@
 }
 
 .footer__subscribe-form-input {
-    color: var(--footer-text-color);
+
     padding: 14px;
     border-radius: var(--rounded-base);
     border: none;
